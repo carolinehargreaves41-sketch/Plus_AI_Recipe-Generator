@@ -1,0 +1,121 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+img {
+  align-items: center;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 600px;
+}
+
+header {
+  margin: 30px;
+}
+
+h1 {
+  color: #451579;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.quote {
+  background-color: #ffffff;
+  border: 1px dotted #7d1fae;
+  color: #7d1fae;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.quote-size {
+  font-size: 12px;
+}
+
+.intro-text {
+  color: #451579;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+  padding: 15px 20px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+a {
+  color: #a467da;
+  font-weight: 600;
+}
+
+.instructions {
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  border-radius: 50px;
+  color: #272044;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 80%;
+}
+
+.submit-button {
+  color: #ffffff;
+  background-color: #7d1fae;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 10px 10px;
+  width: 150px;
+}
+
+.recipe {
+  background-color: #ffffff;
+  border-left: 3px solid #885df1;
+  box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
+  font-size: 14px;
+  line-height: 2;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.recipe strong {
+  color: #885df1;
+}
+
+footer {
+  font-size: 12px;
+  margin-top: 30px;
+  text-align: center;
+}
