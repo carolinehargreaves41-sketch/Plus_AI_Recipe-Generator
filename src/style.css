@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: rgba(232, 201, 236, 0.2);
   font-family: "Roboto", sans-serif;
 }
 
@@ -9,11 +9,11 @@ body {
 }
 
 img {
-  align-items: center;
-  display: flex;
-  height: 300px;
-  justify-content: center;
-  width: 600px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 300px;
 }
 
 header {
@@ -112,6 +112,27 @@ a {
 
 .recipe strong {
   color: #885df1;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
