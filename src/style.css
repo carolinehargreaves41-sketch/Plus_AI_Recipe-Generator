@@ -1,19 +1,19 @@
 body {
-  background-color: rgba(232, 201, 236, 0.2);
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  margin: 120px auto;
+  margin: 60px auto;
   max-width: 600px;
 }
 
 img {
   display: block;
-  height: auto;
+  height: 310px;
   margin: 0 auto;
   max-width: 100%;
-  width: 300px;
+  width: 540px;
 }
 
 header {
@@ -31,6 +31,7 @@ h1 {
 .quote {
   background-color: #ffffff;
   border: 1px dotted #7d1fae;
+  border-radius: 10px;
   color: #7d1fae;
   font-size: 20px;
   font-style: italic;
@@ -47,6 +48,7 @@ h1 {
 .intro-text {
   color: #451579;
   font-size: 16px;
+  font-weight: 600;
   line-height: 2;
 }
 
@@ -63,43 +65,61 @@ form {
 }
 
 .hint {
+  color: #451579;
   font-size: 12px;
   line-height: 1.5;
   margin-top: 10px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 a {
-  color: #a467da;
+  color: #7d1fae;
   font-weight: 600;
 }
 
 .instructions {
-  border: 1px solid rgba(39, 33, 66, 0.5);
-  border-radius: 50px;
-  color: #272044;
+  border: 3px solid #7d1fae;
+  border-radius: 10px;
+  color: #451579;
   padding: 16px;
   font-size: 16px;
   line-height: 20px;
+  transition: border-color 0.3s ease;
   width: 80%;
 }
 
+input::placeholder {
+  color: #451579;
+}
+
+input:focus {
+  outline: transparent;
+  border: 3px solid #e9290f;
+}
+
 .submit-button {
-  color: #ffffff;
   background-color: #7d1fae;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   margin-left: 10px;
   padding: 10px 10px;
   width: 150px;
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #a467da;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
 }
 
 .recipe {
   background-color: #ffffff;
-  border-left: 3px solid #885df1;
+  border-left: 10px solid #a467da;
   box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
   font-size: 14px;
   line-height: 2;
@@ -111,7 +131,7 @@ a {
 }
 
 .recipe strong {
-  color: #885df1;
+  color: #7d1fae;
 }
 
 .generating {
@@ -119,8 +139,8 @@ a {
 }
 
 .error-message {
-    color: #e74c3c;
-    font-weight: 600;
+  color: #e9290f;
+  font-weight: 600;
 }
 
 @keyframes blink-animation {
